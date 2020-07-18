@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #1b1919 0%, #0d0e13 100%);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #f3ca87;
+  margin-left: 235px;
+}
+
+.navigator {
+  display: flex;
+  align-items: center;
+  margin-right: 300px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.active {
+  border-bottom: 2px solid #f3ca87;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-text {
+  margin-left: 50px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  width: 500px;
+  margin-bottom: 3rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text button {
+  background: none;
+  padding: 10px 25px;
+  border: 1.3px solid white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  color: white;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  transform: scale(1.2);
+}
+
+.image {
+  height: 60vh;
+  width: 50%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  margin-left: -12%;
+}
+
+/*  about us*/
+
+.our-story-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-story {
+  width: 75%;
+  height: 60%;
+  display: flex;
+  box-shadow: 5px 5px 20px rgb(29, 29, 29);
+}
+
+.image-story {
+  height: 100%;
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.image-story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: white;
+}
+
+.our-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+}
+
+.discover {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.title-story {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+}
+
+.our-text p {
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.our-text button {
+  background: none;
+  border: none;
+}
+
+.our-text button a {
+  display: flex;
+  align-items: center;
+  color: black;
+  opacity: 0.75;
+  font-size: 1rem;
+}
+
+.icon-arrow {
+  margin-left: 5px;
+}
+
+/*  menu items */
+
+.menu-intro {
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+  margin-top: 5rem;
+}
+
+.menu-discover {
+  display: flex;
+  justify-items: flex-end;
+  flex-direction: column;
+  margin: 0 8rem;
+}
+
+.menu-discover h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.menu-discover h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #f3ca87;
+  font-size: 2.1rem;
+  text-align: end;
+}
+
+.menu-desc {
+  width: 30%;
+}
+
+.menu-desc p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.45;
+  color: white;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image-menu {
+  height: 100%;
+  width: 20%;
+}
+
+.image-menu img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-desc-text {
+  width: 25%;
+  color: white;
+}
+
+.menu-desc-text h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #f3ca87;
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+.menu-desc-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+
+/* upcoming events */
+
+.title {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+}
+
+.info {
+  text-align: end;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.type {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+}
+
+.place {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.upcoming-events {
+  margin-top: 30px;
+}
+
+/*  ingridients content */
+
+.best-ingridients {
+  min-height: 50vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ingridient-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10vh;
+  margin-top: 30px;
+}
+
+.discover-i {
+  color: #f3ca87;
+  opacity: 1;
+}
+
+.title-i {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.ingridient-text p {
+  color: white;
+}
+
+.iImage1 {
+  height: 15rem;
+  width: 15rem;
+  margin-right: 30px;
+}
+
+.iImage2 {
+  height: 25rem;
+  width: 25rem;
+  margin-left: 10px;
+}
+
+.reservation {
+  margin-top: 20vh;
+  background-image: url('./images/reservation.jpg');
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.reservation::after {
+  content: '';
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+}
+
+.discover-r {
+  z-index: 3;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  margin-top: 30px;
+}
+
+.title-r {
+  margin-top: 5px;
+  margin-bottom: 8vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: white;
+  z-index: 3;
+}
+
+.reservation button {
+  z-index: 3;
+  background: none;
+  padding: 10px 25px;
+  border: 1.5px solid white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  color: white;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.reservation button:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  display: flex;
+  min-height: 20vh;
+  margin-top: 15vh;
+  color: white;
+}
+
+.location {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.l {
+  margin-bottom: 15px;
+}
+
+.location-text h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.footer-title {
+  color: #f3ca87;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+.working-house {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.working-container {
+  margin: 0 50px;
+}
+
+.h {
+  margin-bottom: 10px;
+}
+
+.hours-container {
+  display: flex;
+}
+
+.hours-container div {
+  margin-right: 10px;
+}
+
+.hours-container {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hour {
+  margin-left: 30px;
+}
+
+.out {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-discover {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f3ca87;
+}
+
+.out h3 {
+  font-family: 'Open Sans', sans-serif;
+}
