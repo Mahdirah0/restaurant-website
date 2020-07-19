@@ -19,3 +19,32 @@ listLi.forEach((item) => {
     section.classList.remove('section-show');
   });
 });
+
+const scrollAppear = () => {
+  let menuText = document.querySelectorAll('.menu-desc-text');
+  let menuImage = document.querySelectorAll('.image-menu');
+  let screenPosition = window.innerHeight / 2;
+
+  console.log(menuImage);
+
+  menuText.forEach((item) => {
+    let menuTextPos = item.getBoundingClientRect().top - 500;
+    if (menuTextPos < screenPosition) {
+      item.classList.add('menu-desc-text-appear');
+    }
+  });
+
+  menuImage.forEach((item) => {
+    let menuImagePos = item.getBoundingClientRect().top - 500;
+    console.log(menuImagePos);
+    console.log(screenPosition, 'screen');
+    if (menuImagePos < screenPosition) {
+      item.classList.add('menu-image-rotate');
+    }
+    // else {
+    //   item.classList.remove('menu-image-rotate');
+    // }
+  });
+};
+
+window.addEventListener('scroll', scrollAppear);

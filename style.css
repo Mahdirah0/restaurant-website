@@ -184,6 +184,7 @@ header h1 {
 .our-text button {
   background: none;
   border: none;
+  transition: all 1s ease;
 }
 
 .our-text button a {
@@ -192,6 +193,10 @@ header h1 {
   color: black;
   opacity: 0.75;
   font-size: 1rem;
+}
+
+.our-story button:hover {
+  transform: scale(1.2);
 }
 
 .icon-arrow {
@@ -253,6 +258,7 @@ header h1 {
 .image-menu {
   height: 100%;
   width: 20%;
+  transition: all 1s ease;
 }
 
 .image-menu img {
@@ -261,9 +267,21 @@ header h1 {
   object-fit: cover;
 }
 
+.menu-image-rotate {
+  transform: rotate(360deg);
+}
+
 .menu-desc-text {
   width: 25%;
   color: white;
+  transform: translateY(110px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.menu-desc-text-appear {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .menu-desc-text h1 {
@@ -455,7 +473,7 @@ footer {
 }
 
 .working-container {
-  margin: 0 0px 0 200px;
+  margin: 0 0px 0 160px;
 }
 
 .h {
@@ -515,6 +533,12 @@ footer {
   }
   .navigator {
     margin: 0;
+  }
+  .working-container {
+    margin: 0 40px;
+  }
+  .hours-container {
+    font-size: 13px;
   }
 }
 
@@ -735,7 +759,7 @@ footer {
 }
 
 .slide-show {
-  background-color: white;
+  background-color: rgba(1, 1, 1, 0.9);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -757,6 +781,8 @@ footer {
   justify-content: space-evenly;
   height: 90%;
   margin-top: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-links-section li {
@@ -764,8 +790,14 @@ footer {
   list-style: none;
 }
 
+.nav-links-section li:hover {
+  background-color: black;
+}
+
 .nav-links-section li a {
-  color: black;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 .cross {
@@ -785,7 +817,11 @@ footer {
   transform: rotate(360deg);
 }
 
-@media screen and (max-width: 515px) {
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 570px) {
   .section-show {
     display: block;
     transform: translateX(0);
@@ -811,5 +847,90 @@ footer {
 
   header h1 {
     margin: 0;
+  }
+  .our-text h3 {
+    margin-top: 30px;
+  }
+  .our-text button {
+    margin-bottom: 20px;
+  }
+  .hero-text h1 {
+    font-size: 1.2rem;
+    width: 250px;
+  }
+  .image {
+    margin-bottom: 10px;
+  }
+  .iImage2 {
+    height: 10vh;
+    width: 70%;
+  }
+  .discover-r {
+    font-size: 2.4rem;
+  }
+  .title-r {
+    font-size: 1.8rem;
+  }
+  .title-i {
+    font-size: 1.6rem;
+  }
+  .ingridient-text p {
+    font-size: 0.8rem;
+  }
+  .menu-desc-text h1 {
+    font-size: 1.8rem;
+  }
+  .menu-desc-text p {
+    font-size: 0.8rem;
+  }
+  .menu-discover {
+    width: 100%;
+    text-align: center;
+  }
+  .menu-intro {
+    margin-top: 30px;
+  }
+  .image {
+    height: 30vh;
+    width: 80%;
+  }
+  .hour {
+    margin-left: 10px;
+  }
+  .our-text p {
+    font-size: 0.8rem;
+  }
+  .menu-desc p {
+    font-size: 0.8rem;
+  }
+  .info {
+    margin-top: 5px;
+  }
+  .info .type {
+    margin-top: 5px;
+  }
+  .info .place {
+    margin-top: 20px;
+  }
+  .working-container {
+    margin-bottom: 10px;
+  }
+  .hour {
+    margin: 0;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .date {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .iImage2 {
+    width: 40%;
+  }
+  .hero {
+    margin-bottom: 0px;
   }
 }
