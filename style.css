@@ -8,9 +8,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: linear-gradient(to right, #1b1919 0%, #0d0e13 100%);
   overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 a {
@@ -95,7 +101,8 @@ header h1 {
 }
 
 .hero-text button:hover {
-  transform: scale(1.2);
+  background-color: white;
+  color: black;
 }
 
 .image {
@@ -112,7 +119,7 @@ header h1 {
 /*  about us*/
 
 .our-story-container {
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,8 +133,8 @@ header h1 {
 }
 
 .image-story {
-  height: 100%;
   width: 40%;
+  height: 400px;
   flex-shrink: 0;
 }
 
@@ -320,19 +327,21 @@ header h1 {
 
 .discover-i {
   color: #f3ca87;
+  font-size: 2.1rem;
   opacity: 1;
 }
 
 .title-i {
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   color: white;
 }
 
 .ingridient-text p {
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .iImage1 {
@@ -343,9 +352,11 @@ header h1 {
 
 .iImage2 {
   height: 25rem;
-  width: 25rem;
+  width: 45rem;
   margin-left: 10px;
 }
+
+/* reservation */
 
 .reservation {
   margin-top: 20vh;
@@ -395,16 +406,19 @@ header h1 {
   border: 1.5px solid white;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 3px;
   color: white;
-  transition: 1s ease;
+  transition: all 0.75s ease;
   cursor: pointer;
 }
 
 .reservation button:hover {
-  transform: scale(1.2);
+  background-color: white;
+  color: black;
 }
+
+/* footer */
 
 footer {
   display: flex;
@@ -441,7 +455,7 @@ footer {
 }
 
 .working-container {
-  margin: 0 50px;
+  margin: 0 0px 0 200px;
 }
 
 .h {
@@ -458,6 +472,7 @@ footer {
 
 .hours-container {
   font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
 
 .hour {
@@ -480,4 +495,321 @@ footer {
 
 .out h3 {
   font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+/* responsive website media screen */
+
+@media screen and (max-width: 1320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 25px;
+  }
+
+  header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .navigator {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .image {
+    margin-top: 50px;
+  }
+  .image img {
+    margin-left: 0;
+  }
+  .hero-text {
+    margin-top: 15px;
+  }
+  .hero-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .hero-text button {
+    padding: 10px 10px;
+    font-size: 1rem;
+  }
+  .working-house {
+    margin: 0 0;
+  }
+  .working-container {
+    margin: 0 0;
+  }
+  .menu-desc {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: 1.2rem;
+  }
+  .menu-discover h3 {
+    text-align: center;
+  }
+  .menu-discover {
+    margin-bottom: 15px;
+  }
+  .menu-desc p {
+    text-align: center;
+  }
+  .our-text h2 {
+    font-size: 2rem;
+  }
+
+  .our-text p {
+    font-size: 0.9rem;
+  }
+  .our-text button a {
+    font-size: 0.8rem;
+  }
+  .menu-desc-text p {
+    margin-bottom: 15px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .footer-title {
+    text-align: center;
+  }
+  footer div {
+    margin-bottom: 15px;
+  }
+  .out {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .menu-intro {
+    margin-bottom: 60px;
+  }
+  .menu-desc {
+    width: 75%;
+  }
+  .menu-discover h2 {
+    font-size: 2rem;
+  }
+  .menu-desc p {
+    font-size: 14px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .item2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .item4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .menu-desc-text {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .image-menu {
+    margin-bottom: 20px;
+    width: 60%;
+  }
+  .menu-desc-text h1 {
+    font-size: 2.5rem;
+  }
+  .ingridient-text {
+    width: 70%;
+  }
+  .ingridient-text p {
+    font-size: 0.9rem;
+  }
+  .upcoming-events {
+    margin-top: 0;
+  }
+  .reservation {
+    margin-top: 70px;
+  }
+  .image {
+    height: 45vh;
+    width: 70%;
+    margin-bottom: 100px;
+  }
+  .hero-text {
+    text-align: center;
+    margin: 0;
+  }
+  .info {
+    text-align: center;
+  }
+  .upcoming-text p {
+    margin-bottom: 15px;
+  }
+  .info h3 {
+    font-size: 0.9rem;
+  }
+  .images-ingridient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iImage1 {
+    height: 10vh;
+    width: 20%;
+    margin: 0;
+  }
+  .iImage2 {
+    height: 10rem;
+    width: 20rem;
+  }
+  .hero {
+    height: 80vh;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .our-story-container {
+    margin-bottom: 20px;
+  }
+  .image-story {
+    width: 100%;
+    height: 200px;
+  }
+  .our-story {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-text-container {
+    width: 100%;
+    min-height: 40vh;
+  }
+  .our-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .our-text h2 {
+    text-align: center;
+  }
+  .info {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .menu-desc-text {
+    width: 75%;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.burger div {
+  height: 5px;
+  width: 25px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.slide-show {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  transform: translateX(100%);
+  transition: all 1s ease;
+}
+
+.navigator-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90%;
+  margin-top: 30px;
+}
+
+.nav-links-section li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.nav-links-section li a {
+  color: black;
+}
+
+.cross {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  outline: none;
+  border: none;
+  color: red;
+  font-size: 30px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.cross:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 515px) {
+  .section-show {
+    display: block;
+    transform: translateX(0);
+    transition: all 1s ease;
+  }
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(53, 46, 46, 0.7);
+    padding: 15px;
+    z-index: 5;
+  }
+
+  header h1 {
+    margin: 0;
+  }
 }
