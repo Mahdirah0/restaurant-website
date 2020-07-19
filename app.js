@@ -41,9 +41,6 @@ const scrollAppear = () => {
     if (menuImagePos < screenPosition) {
       item.classList.add('menu-image-rotate');
     }
-    // else {
-    //   item.classList.remove('menu-image-rotate');
-    // }
   });
 };
 
